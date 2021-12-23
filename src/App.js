@@ -1,25 +1,11 @@
 import './App.css';
-import { getRandomQuote, Quotes } from './Quotes';
-import { useState } from 'react';
-import DarkModeToggle from "react-dark-mode-toggle";
+import { getRandomQuote } from './Quotes';
+import React, { useState } from 'react';
+
 
 const App = () => {
 
   const [ quote, setQuote ] = useState()
-
-
-  const [username, setUsername] = useState();
-
-
-  const quotes = () => {
-
-    getRandomQuote()
-
-  }
-
-  const handleText = () => {
-    return 'Here is your quote'
-  }
 
   const setRandomQuote = () => {
 
