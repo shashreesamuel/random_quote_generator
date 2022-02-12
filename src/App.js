@@ -18,7 +18,6 @@ const App = () => {
         <p class={!quote ? "toggleStyle": "notToggleStyle"}>A random quote generator designed to empower and inspire you with famous quotes from intelligent and well known scholars. <br />Anyday, Anytime</p>
         <br />
         <br />
-        {darkmode ? <body className="darkMode"></body> : ''}
         <p class={quote ? "generatedQuote" : ''}>{quote}</p>
         <button onClick={setRandomQuote} className="cta-button">Generate</button>
     </div>
