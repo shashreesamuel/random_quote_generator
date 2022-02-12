@@ -1,5 +1,4 @@
 import { quotes } from "./quotesdata";
-import React from "react";
 
 
 export let getRandomQuote = () => {
