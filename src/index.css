@@ -35,10 +35,10 @@
   font-size: 16px;
   font-family: 'Poppins';
   font-weight: 600;
-
+  cursor: pointer;
 }
 
-/*.cta-button:hover{
+.cta-button:hover{
   background-color: black;
   padding: 12px;
   width: 122px;
@@ -47,7 +47,7 @@
   font-family: 'Poppins';
   transition: 0.4s ease-in-out;
 }
-*/
+
 .generatedQuote{
   font-family: 'Comfortaa', cursive;
   font-size: 16px;
