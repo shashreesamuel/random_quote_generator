@@ -6,14 +6,6 @@ const App = () => {
 
   const [ quote, setQuote ] = useState()
 
-  const [ darkmode, setDarkMode ] = useState(false)
-
-  const quotes = () => {
-
-    getRandomQuote()
-
-  }
-
   const setRandomQuote = () => {
 
     setQuote(getRandomQuote())
