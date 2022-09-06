@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Poppins';
+    }
+}
+
+.text-brown{
+    color: #3E3E3E;
+}
+.bg-brown{
+    background-color: #3E3E3E;
+}
