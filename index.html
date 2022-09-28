@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <title>Random Motivational Quotes</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="style.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&family=Sniglet&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <main class="container">
-    <h1 class="container__title">Random Quote</h1>
-    <p class="container__description">
-      A random quote generator designed to empower and inspire you with famous
-      quotes from intelligent and well known scholars. Anyday, Anytime
-    </p>
-    <a class="container__button">Generate a Random Quote</a>
-    <div class="quote-container">
-      <p class="quote"></p>
-    </div>
-  </main>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script type="module" src="script.js"></script>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body onload="myFunction()">
+    <nav>
+      <div class="right-aligned">
+        <ion-icon name="contrast" id="toggleDark"></ion-icon>
+      </div>
+    </nav>
+    <main class="container">
+      <h1 class="container__title">Random Quote</h1>
+      <p class="container__description">
+        A random quote generator designed to empower and inspire you with famous
+        quotes from intelligent and well known scholars. Anyday, Anytime
+      </p>
+      <a class="container__button">Generate a Random Quote</a>
+      <div class="quote-container">
+        <p class="quote"></p>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>

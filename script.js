@@ -364,3 +364,11 @@ button.addEventListener('click', () => {
     button.innerHTML = 'Generate a Random Quote'
 
 })
+
+const toggle = document.getElementById('toggleDark')
+const body = document.querySelector('body');
+
+toggle.addEventListener('click', function() {
+	body.classList.toggle("darkMode");
+	toggle.classList.add('rotate');
+})

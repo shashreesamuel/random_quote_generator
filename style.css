@@ -1,11 +1,35 @@
+:root {
+  --icon-color: #535353;
+  --button-background-color: #535353;
+  --button-border-color: #535353;
+  --button-hover: transparent;
+  --button-text-color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.darkMode {
+  color: white;
+  background-color: #535353;
+  --icon-color: white;
+  --button-text-color: #535353;
+  --button-background-color: white;
+  --button-border-color: white;
+  --button-hover: #535353;
+}
+
+.rotate {
+  transition: 2s transform ease;
+  transform: rotate(180deg);
+}
+
 body {
   min-height: 100vh;
+  transition: 600ms ease;
   font-family: "Poppins";
 }
 
@@ -14,31 +38,32 @@ body {
 }
 .container__title {
   margin-top: 2em;
-  color: #3E3E3E;
+  display: inline-block;
+  color: var(--color);
 }
 .container__description {
   margin: 2em auto;
-  color: #3E3E3E;
+  color: var(--color);
   width: 20em;
   text-align: center;
   line-height: 2em;
 }
 .container__button {
   display: inline-block;
-  border: 0.1em solid currentColor;
+  border: 0.1em solid var(--button-border-color);
   padding-block: 1em;
   padding-inline: 1em;
   border-radius: 0.3em;
   transition: 300ms background-color ease;
   font-weight: 500;
-  background-color: #3E3E3E;
-  color: white;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
 }
 .container__button:hover {
   cursor: pointer;
-  border: 0.1em solid currentColor;
-  background-color: transparent;
-  color: #3E3E3E;
+  border: 0.1em solid var(--button-border-color);
+  background-color: var(--button-hover);
+  color: var(--button-background-color);
 }
 
 .quote-container {
@@ -47,10 +72,26 @@ body {
   display: none;
   font-family: "Sniglet";
   font-size: 1.1em;
-  color: #3E3E3E;
-  width: clamp(15em, 45vw, 45em);
-  border: 0.1em solid #3E3E3E;
+  color: var(--icon-color);
+  width: clamp(15em, 25vw, 45em);
+  border: 0.1em solid var(--icon-color);
   border-radius: 0.3em;
+}
+
+nav {
+  position: relative;
+}
+
+.right-aligned {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+ion-icon {
+  font-size: 1.3rem;
+  transform: none;
+  color: var(--icon-color);
 }
 
 /*# sourceMappingURL=style.css.map */
