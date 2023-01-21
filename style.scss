@@ -1,0 +1,101 @@
+:root{
+
+    --icon-color: #535353;
+    --button-background-color: #535353;
+    --button-border-color: #535353;
+    --button-hover: transparent;
+    --button-text-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.darkMode {
+  color: white;
+  background-color: #535353;
+  --icon-color: white;
+  --button-text-color: #535353;
+  --button-background-color: white;
+  --button-border-color: white;
+  --button-hover: #535353;
+}
+
+.rotate{
+    transition: 2s transform ease;
+    transform: rotate(180deg);
+}
+
+
+body {
+  min-height: 100vh;
+  transition: 600ms ease;
+  font-family: "Poppins";
+}
+
+.container {
+  text-align: center;
+
+  &__title {
+    margin-top: 2em;
+    display: inline-block;
+    color: var(--color);
+  }
+
+  &__description {
+    margin: 2em auto;
+    color: var(--color);
+    width: clamp(15em, 20em, 55em);
+    text-align: center;
+    line-height: 2em;
+  }
+
+  &__button {
+    display: inline-block;
+    border: 0.1em solid var(--button-border-color);
+    padding-block: 1em;
+    padding-inline: 1em;
+    border-radius: 0.3em;
+    transition: 300ms background-color ease;
+    font-weight: 500;
+    background-color:  var(--button-background-color);
+    color:  var(--button-text-color);
+
+    &:hover {
+      cursor: pointer;
+      border: 0.1em solid  var(--button-border-color);
+      background-color: var(--button-hover);
+      color:  var(--button-background-color);
+    }
+  }
+}
+
+.quote-container {
+  margin: 4em auto;
+  padding: 1em;
+  display: none;
+  font-family: "Sniglet";
+  font-size: 1.1em;
+  color: var(--icon-color);
+  width: clamp(15em, 25vw, 45em);
+  border: 0.1em solid var(--icon-color);
+  border-radius: 0.3em;
+}
+
+nav {
+  position: relative;
+}
+
+.right-aligned {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+ion-icon {
+  font-size: 1.3rem;
+  transform: none;
+  color: var(--icon-color);
+}
