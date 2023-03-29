@@ -9,32 +9,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&family=Sniglet&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sniglet&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  <body onload="myFunction()">
-    <nav>
-      <div class="right-aligned">
-        <ion-icon name="contrast" id="toggleDark"></ion-icon>
-      </div>
-    </nav>
-    <main class="container">
-      <h1 class="container__title">Random Quote</h1>
-      <p class="container__description">
-        A random quote generator designed to empower and inspire you with famous
-        quotes from intelligent and well known scholars. Anyday, Anytime
-      </p>
-      <a class="container__button">Generate a Random Quote</a>
-      <div class="quote-container">
-        <p class="quote"></p>
-      </div>
-    </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script type="module" src="script.js"></script>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div>
+            <h1 class="navbar__logo">Random Quote</h1>
+          </div>
+          <ion-icon name="contrast" id="toggleDark"></ion-icon>
+        </nav>
+      </header>
+      <main class="container">
+        <div class="content">
+          <h1 class="container__title">Generate a Random Quote</h1>
+          <p class="container__description">
+            generate a random famous quote and feel inspired and motivated from
+            intelligent, well known scholars. Anyday, Anytime and at your own
+            convenience.
+          </p>
+          <a class="container__button">Generate</a>
+        </div>
+        <div class="quote-container">
+          <p class="quote"></p>
+          <p class="author"></p>
+        </div>
+      </main>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script type="module" src="script.js"></script>
+    </div>
   </body>
 </html>
